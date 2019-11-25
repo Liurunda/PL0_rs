@@ -14,11 +14,14 @@ communications between functions are implemented by lots of global variables in 
 
 The executable should be given a pl0 source file as input. 
 
-Output contains symbol table, three address codes, the executing result of the pl0 program(if input are provided).
+Output contains symbol table, virtual machine codes, the executing result of the pl0 program(if input are provided).
 
 getch(): get a new char from source file
 
-getsym(): manually simulate a DFA, finish lexical analysis.
+getsym(): manually simulate a DFA, finish lexical analysis. store the next symbol in global variable sym
 
-interpret(): interpret the three address code stored in array `code []`
+lots of functions: recursive descent analysis, with syntax analysis, syntactic analysis, strongly coupled
 
+interpret(): interpret the three address code stored in array `code []`, working as a virtual machine
+
+test(): implement simple error recovery. c enum is also integer, number of different symbols is small, so use bool array to represent Follow Set. 
