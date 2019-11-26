@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/liurd18/compiler_lab/clang/pl0/pl0.c
+stdio.h
+-
+pl0.h
+/home/liurd18/compiler_lab/clang/pl0/pl0.h
+
+/home/liurd18/compiler_lab/clang/pl0/pl0.h
+
