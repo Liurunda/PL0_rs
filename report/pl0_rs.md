@@ -8,4 +8,12 @@ scanner.rs: struct Scanner implement lexical analysis as am independent pass, pr
 
 parser.rs: handwritten recursive descent analysis, no error recovery, exit at first error
 
-irgen.rs: generate symbol table and intermediate representation
+ir.rs: definition of intermediate representation
+
+irgen.rs: generate symbol table and intermediate representation, use pattern match instead of  visitor to process different ast nodes.
+
+codegen.rs: generate a kind of machine code
+
+vm.rs: execute the machine code， simulate the stack
+
+interp.rs: interpreter, execute the program from the result of parser(interpret the ast directly)
